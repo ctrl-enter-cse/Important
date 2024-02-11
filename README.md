@@ -44,6 +44,10 @@ git push origin main
 Use Git Command Line: If you're trying to clone the repository or perform Git operations, try using the Git command line instead of a GUI tool. Open a terminal or command prompt and use the git clone command with the repository URL.
 
 git clone https://github.com/ctrl-enter-cse/Banking-App.git
+---------------------------------------------------------------------------
+
+git pull origin main --allow-unrelated-histories
+
 
 This command allows Git to merge the unrelated histories and pull the changes from the main branch of the remote repository into your local branch.
 
