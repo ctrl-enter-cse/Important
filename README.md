@@ -26,7 +26,8 @@ To push a local project to an existing GitHub repository, you can follow these s
    git push -u origin master
 
    If you're working with a branch other than `master`, replace `master` with your branch name.
-
+  
+----------------------------------------------------------------
    If this is your first time pushing, Git might prompt you for your GitHub username and password. Alternatively, you can use a Personal Access Token for authentication.
 
 That's it! Your local project is now pushed to your existing GitHub repository. Remember to replace the placeholder values (`your-username` and `your-repository`) with your actual GitHub username and repository name.
@@ -52,3 +53,13 @@ git pull origin main --allow-unrelated-histories
 This command allows Git to merge the unrelated histories and pull the changes from the main branch of the remote repository into your local branch.
 
 Once you've resolved any conflicts and completed the merge, you should be able to push your changes to the remote repository without encountering the "unrelated histories" error. Use the git push command as usual to push your changes.
+
+
+** how to delete the commits **
+
+      git reset --soft HEAD~(no of commits) 
+      sample :git reset --soft HEAD~2
+
+      *push the changes to the git hub*
+
+      git push origin +master --force 
