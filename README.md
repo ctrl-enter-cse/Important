@@ -63,3 +63,17 @@ Once you've resolved any conflicts and completed the merge, you should be able t
       *push the changes to the git hub*
 
       git push origin +master --force 
+
+**this is to create new branch  push the changes , merge and delete the banch ** 
+      git  checkout 
+
+     git branch prasanna 
+     git checkout prasanna
+     git add .
+     git status
+     git commit -m"change push to pransanna branch"
+     git push origin prasanna
+     git checkout  prasanna  // this say  already on the prasanna branch 
+     git checkout main   // shifted to the main branch
+     git branch -d prasanna
+     
